@@ -6,14 +6,36 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    var auth: Auth?
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var senhaTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.auth = Auth.auth()
     }
 
-
+    @IBAction func buttonAction(_ sender: Any) {
+        
+        let email: String = self.emailTextField.text ?? ""
+        let senha: String = self.senhaTextField.text ?? ""
+        
+        self.auth?.createUser(withEmail: email, password: senha, completion: { (result, error) in
+            
+            if error != nil {
+                print("Falha ao cadastrar")
+            } else {
+                print("Sucesso ao cadastrar")
+            }
+        })
+    }
+    
 }
 
