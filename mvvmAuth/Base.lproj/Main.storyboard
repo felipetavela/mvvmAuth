@@ -97,7 +97,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="C3o-6x-lzB" eventType="touchUpInside" id="xUS-4I-rWQ"/>
+                                    <action selector="loginAction:" destination="C3o-6x-lzB" eventType="touchUpInside" id="uRm-R4-U5f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcb-ER-h1N">
@@ -107,7 +107,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cadastrar"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="C3o-6x-lzB" eventType="touchUpInside" id="IL7-K7-SAa"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="8IH-kS-ODh"/>
                                 </connections>
                             </button>
@@ -117,7 +116,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="D7L-KY-pNb"/>
                     <connections>
-                        <outlet property="senhaTextField" destination="OaE-Mb-eV4" id="McS-Lo-AY5"/>
+                        <outlet property="emailTextField" destination="42C-tb-zB2" id="eVH-pV-aoc"/>
+                        <outlet property="senhaTextField" destination="OaE-Mb-eV4" id="AYW-uN-Fgi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfq-tG-KOx" sceneMemberID="firstResponder"/>
