@@ -7,10 +7,22 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var senhaView: UIView!
+    
     var auth:Auth?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.tintColor = UIColor.clear
+        senhaTextField.tintColor = UIColor.clear
+        loginButton.layer.cornerRadius = 15
+        emailView.layer.cornerRadius = 10
+        senhaView.layer.cornerRadius = 10
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
         
         self.auth = Auth.auth()
     }
@@ -45,5 +57,13 @@ print("Dados incorretos, tente novamente")
                 self.performSegue(withIdentifier: "toAuth", sender: self)
             }
         })
+    }
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.text = ""
     }
 }

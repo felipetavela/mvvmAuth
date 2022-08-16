@@ -13,12 +13,25 @@ class CadastroViewController: UIViewController {
     var auth: Auth?
     
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var senhaTextField: UITextField!
+    
+    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var usernameView: UIView!
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usernameView.layer.cornerRadius = 10
+        emailView.layer.cornerRadius = 10
+        passwordView.layer.cornerRadius = 10
+        
+        
+        
+        registerButton.layer.cornerRadius = 15
         self.auth = Auth.auth()
     }
     
@@ -55,7 +68,7 @@ extension UITextField {
     
     func validateEmail () -> Bool {
         
-        let emailRegex = "[A-za-z0-9._%+-]+@[A-Za-z0-9.-]+.\\[A-Za-z]{2,64}"
+        let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.\\[A-Za-z]{2,64}"
         let validateRegex = NSPredicate(format: "SELF MATCHES %@", emailRegex)
     
         return validateRegex.evaluate(with: self.text)
