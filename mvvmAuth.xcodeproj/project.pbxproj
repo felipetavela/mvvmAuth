@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		2894721628AD7CDD0018571C /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721528AD7CDD0018571C /* ModelUser.swift */; };
 		2894721928AD87620018571C /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721828AD87620018571C /* UsernameViewController.swift */; };
-		2894721B28AD8A8F0018571C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721A28AD8A8F0018571C /* Alert.swift */; };
 		2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721D28AD8E8F0018571C /* PerfilViewController.swift */; };
+		2894722128AD93A30018571C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722028AD93A30018571C /* UserViewModel.swift */; };
+		2894722428AD9C070018571C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722328AD9C070018571C /* SearchCell.swift */; };
+		2894722628AD9C780018571C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722528AD9C780018571C /* SearchViewController.swift */; };
 		28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */; };
 		28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */; };
 		28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */; };
@@ -46,8 +48,10 @@
 /* Begin PBXFileReference section */
 		2894721528AD7CDD0018571C /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		2894721828AD87620018571C /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
-		2894721A28AD8A8F0018571C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2894721D28AD8E8F0018571C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		2894722028AD93A30018571C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2894722328AD9C070018571C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		2894722528AD9C780018571C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		28C8B91A28AAE82400DEEBEE /* mvvmAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				2894721528AD7CDD0018571C /* ModelUser.swift */,
-				2894721A28AD8A8F0018571C /* Alert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,8 +108,25 @@
 			isa = PBXGroup;
 			children = (
 				2894721D28AD8E8F0018571C /* PerfilViewController.swift */,
+				2894722528AD9C780018571C /* SearchViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2894721F28AD93980018571C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2894722028AD93A30018571C /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2894722228AD9BC80018571C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2894722328AD9C070018571C /* SearchCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		28C8B91128AAE82400DEEBEE = {
@@ -132,7 +152,9 @@
 		28C8B91C28AAE82400DEEBEE /* mvvmAuth */ = {
 			isa = PBXGroup;
 			children = (
+				2894722228AD9BC80018571C /* Cell */,
 				2894721728AD7CE30018571C /* Model */,
+				2894721F28AD93980018571C /* ViewModel */,
 				28C8B95E28AB254200DEEBEE /* Controllers */,
 				28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */,
 				28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */,
@@ -312,14 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2894722628AD9C780018571C /* SearchViewController.swift in Sources */,
 				28C8B95B28AAEE6700DEEBEE /* LoginViewController.swift in Sources */,
+				2894722428AD9C070018571C /* SearchCell.swift in Sources */,
+				2894722128AD93A30018571C /* UserViewModel.swift in Sources */,
 				28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */,
 				2894721628AD7CDD0018571C /* ModelUser.swift in Sources */,
 				28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */,
 				2894721928AD87620018571C /* UsernameViewController.swift in Sources */,
 				28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */,
 				2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */,
-				2894721B28AD8A8F0018571C /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

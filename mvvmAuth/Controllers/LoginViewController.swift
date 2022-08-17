@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
         emailTextField.tintColor = UIColor.clear
         senhaTextField.tintColor = UIColor.clear
         loginButton.layer.cornerRadius = 15

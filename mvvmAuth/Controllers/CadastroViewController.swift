@@ -12,12 +12,10 @@ class CadastroViewController: UIViewController {
 
     var auth: Auth?
     
- 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     
     @IBOutlet weak var registerButton: UIButton!
-    
     
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
