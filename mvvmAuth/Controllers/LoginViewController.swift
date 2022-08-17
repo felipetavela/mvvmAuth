@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         emailTextField.tintColor = UIColor.clear
         senhaTextField.tintColor = UIColor.clear
@@ -38,28 +39,43 @@ class LoginViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
     @IBAction func loginAction(_ sender: Any) {
         
         let email: String = self.emailTextField.text ?? ""
-        
         let senha: String = self.senhaTextField.text ?? ""
         
-        self.auth?.signIn(withEmail: email, password: senha, completion: { (usuario, error)  in
+        switch (self.emailTextField.validateEmail(), self.senhaTextField.validatePassword()) {
             
-            if error != nil {
-print("Dados incorretos, tente novamente")
-            }
+        case (true, true):
             
-            if usuario == nil {
-                print("Tivemos um problema inesperado")
-            }
-            else {
-                self.performSegue(withIdentifier: "toAuth", sender: self)
-            }
-        })
+            self.auth?.signIn(withEmail: email, password: senha, completion: { (usuario, error)  in
+                 if error != nil {
+                     self.alert(title: "Falha de login", message: "Falha ao conectar")
+                 }
+                 if usuario == nil {
+                     self.alert(title: "Falha de login", message: "Usuário não encontrado")}
+                 else {
+                     let user = Auth.auth().currentUser
+                     
+                     if user?.displayName != nil {
+                         self.performSegue(withIdentifier: "toDirectPerfil", sender: self)
+                     } else{
+                     self.performSegue(withIdentifier: "toAuth", sender: self)
+                     }
+                 }
+             })
+        case (false, true):
+            alert(title: "Erro", message: "Email inválido")
+            
+        case (true, false):
+            alert(title: "Erro", message: "Senha inválida \n Min: 6 caracteres")
+            
+        case (false, false):
+            alert(title: "Erro", message: "Digite email e senha válidos")
+        }
     }
 }
-
 
 extension LoginViewController: UITextFieldDelegate {
     

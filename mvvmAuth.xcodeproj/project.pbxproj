@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2894721628AD7CDD0018571C /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721528AD7CDD0018571C /* ModelUser.swift */; };
+		2894721928AD87620018571C /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721828AD87620018571C /* UsernameViewController.swift */; };
+		2894721B28AD8A8F0018571C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721A28AD8A8F0018571C /* Alert.swift */; };
+		2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721D28AD8E8F0018571C /* PerfilViewController.swift */; };
 		28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */; };
 		28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */; };
 		28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2894721528AD7CDD0018571C /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
+		2894721828AD87620018571C /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
+		2894721A28AD8A8F0018571C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2894721D28AD8E8F0018571C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		28C8B91A28AAE82400DEEBEE /* mvvmAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2894721728AD7CE30018571C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2894721528AD7CDD0018571C /* ModelUser.swift */,
+				2894721A28AD8A8F0018571C /* Alert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2894721C28AD8E7E0018571C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2894721D28AD8E8F0018571C /* PerfilViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		28C8B91128AAE82400DEEBEE = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,7 @@
 		28C8B91C28AAE82400DEEBEE /* mvvmAuth */ = {
 			isa = PBXGroup;
 			children = (
+				2894721728AD7CE30018571C /* Model */,
 				28C8B95E28AB254200DEEBEE /* Controllers */,
 				28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */,
 				28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */,
@@ -139,8 +165,10 @@
 		28C8B95E28AB254200DEEBEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2894721C28AD8E7E0018571C /* TabBar */,
 				28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */,
 				28C8B95A28AAEE6700DEEBEE /* LoginViewController.swift */,
+				2894721828AD87620018571C /* UsernameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,8 +314,12 @@
 			files = (
 				28C8B95B28AAEE6700DEEBEE /* LoginViewController.swift in Sources */,
 				28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */,
+				2894721628AD7CDD0018571C /* ModelUser.swift in Sources */,
 				28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */,
+				2894721928AD87620018571C /* UsernameViewController.swift in Sources */,
 				28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */,
+				2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */,
+				2894721B28AD8A8F0018571C /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
