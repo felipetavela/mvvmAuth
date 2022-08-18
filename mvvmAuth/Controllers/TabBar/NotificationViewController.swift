@@ -7,6 +7,7 @@ class NotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 

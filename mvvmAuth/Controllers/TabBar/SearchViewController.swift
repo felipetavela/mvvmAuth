@@ -9,6 +9,7 @@ class SearchViewController: UIViewController {
         
         self.searchTableView.dataSource = self
         self.searchTableView.delegate = self
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 

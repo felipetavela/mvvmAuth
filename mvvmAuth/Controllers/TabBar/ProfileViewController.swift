@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
     
         self.auth = Auth.auth()
         labelUsername.text = self.auth?.currentUser?.displayName
-        
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 

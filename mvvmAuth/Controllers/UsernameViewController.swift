@@ -7,11 +7,14 @@ class UsernameViewController: UIViewController {
     
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usernameView.layer.cornerRadius = 10
         enterButton.layer.cornerRadius = 15
+        self.hideKeyboardWhenTappedAround() 
     }
     
     func alert (title: String, message: String) {

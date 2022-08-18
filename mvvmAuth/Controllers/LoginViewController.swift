@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        emailTextField.autocapitalizationType = UITextAutocapitalizationType.none
+        senhaTextField.autocapitalizationType = UITextAutocapitalizationType.none
+        
         emailTextField.tintColor = UIColor.clear
         senhaTextField.tintColor = UIColor.clear
         loginButton.layer.cornerRadius = 15
@@ -25,6 +28,7 @@ class LoginViewController: UIViewController {
         senhaTextField.delegate = self
         
         self.auth = Auth.auth()
+        self.hideKeyboardWhenTappedAround() 
     }
     
     func alert (title: String, message: String) {
@@ -80,5 +84,17 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(textField: UITextField) {
         textField.text = ""
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

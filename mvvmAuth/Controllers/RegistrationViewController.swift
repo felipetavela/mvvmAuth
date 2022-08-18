@@ -32,6 +32,7 @@ class RegistrationViewController: UIViewController {
         registerButton.layer.cornerRadius = 15
         
         self.auth = Auth.auth()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func alert (title: String, message: String) {
@@ -108,3 +109,4 @@ extension UITextField {
         return validateRegex.evaluate(with: self.text)
     }
 }
+
