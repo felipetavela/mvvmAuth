@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class CadastroViewController: UIViewController {
+class RegistrationViewController: UIViewController {
 
     var auth: Auth?
     
@@ -74,7 +74,7 @@ class CadastroViewController: UIViewController {
 }
 }
 
-extension CadastroViewController: UITextFieldDelegate {
+extension RegistrationViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(textField: UITextField) {
         textField.text = ""

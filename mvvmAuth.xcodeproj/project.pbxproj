@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2847325E28ADECBA003989E5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847325D28ADECBA003989E5 /* NotificationViewController.swift */; };
+		2847326028ADECFD003989E5 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847325F28ADECFD003989E5 /* NotificationCell.swift */; };
 		2894721628AD7CDD0018571C /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721528AD7CDD0018571C /* ModelUser.swift */; };
 		2894721928AD87620018571C /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721828AD87620018571C /* UsernameViewController.swift */; };
-		2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721D28AD8E8F0018571C /* PerfilViewController.swift */; };
+		2894721E28AD8E8F0018571C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894721D28AD8E8F0018571C /* ProfileViewController.swift */; };
 		2894722128AD93A30018571C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722028AD93A30018571C /* UserViewModel.swift */; };
 		2894722428AD9C070018571C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722328AD9C070018571C /* SearchCell.swift */; };
 		2894722628AD9C780018571C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722528AD9C780018571C /* SearchViewController.swift */; };
+		2894722828ADDD1E0018571C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894722728ADDD1E0018571C /* ProfileCell.swift */; };
 		28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */; };
 		28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */; };
-		28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */; };
+		28C8B92228AAE82400DEEBEE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8B92128AAE82400DEEBEE /* RegistrationViewController.swift */; };
 		28C8B92528AAE82400DEEBEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8B92328AAE82400DEEBEE /* Main.storyboard */; };
 		28C8B92728AAE82600DEEBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C8B92628AAE82600DEEBEE /* Assets.xcassets */; };
 		28C8B92A28AAE82600DEEBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8B92828AAE82600DEEBEE /* LaunchScreen.storyboard */; };
@@ -46,16 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2847325D28ADECBA003989E5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		2847325F28ADECFD003989E5 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		2894721528AD7CDD0018571C /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		2894721828AD87620018571C /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
-		2894721D28AD8E8F0018571C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		2894721D28AD8E8F0018571C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2894722028AD93A30018571C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2894722328AD9C070018571C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		2894722528AD9C780018571C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2894722728ADDD1E0018571C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		28C8B91A28AAE82400DEEBEE /* mvvmAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8B91D28AAE82400DEEBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8B91F28AAE82400DEEBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		28C8B92128AAE82400DEEBEE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		28C8B92428AAE82400DEEBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28C8B92628AAE82600DEEBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C8B92928AAE82600DEEBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,8 +113,9 @@
 		2894721C28AD8E7E0018571C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				2894721D28AD8E8F0018571C /* PerfilViewController.swift */,
+				2894721D28AD8E8F0018571C /* ProfileViewController.swift */,
 				2894722528AD9C780018571C /* SearchViewController.swift */,
+				2847325D28ADECBA003989E5 /* NotificationViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -125,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				2894722328AD9C070018571C /* SearchCell.swift */,
+				2894722728ADDD1E0018571C /* ProfileCell.swift */,
+				2847325F28ADECFD003989E5 /* NotificationCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -188,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2894721C28AD8E7E0018571C /* TabBar */,
-				28C8B92128AAE82400DEEBEE /* CadastroViewController.swift */,
+				28C8B92128AAE82400DEEBEE /* RegistrationViewController.swift */,
 				28C8B95A28AAEE6700DEEBEE /* LoginViewController.swift */,
 				2894721828AD87620018571C /* UsernameViewController.swift */,
 			);
@@ -336,14 +345,17 @@
 			files = (
 				2894722628AD9C780018571C /* SearchViewController.swift in Sources */,
 				28C8B95B28AAEE6700DEEBEE /* LoginViewController.swift in Sources */,
+				2847325E28ADECBA003989E5 /* NotificationViewController.swift in Sources */,
 				2894722428AD9C070018571C /* SearchCell.swift in Sources */,
+				2847326028ADECFD003989E5 /* NotificationCell.swift in Sources */,
+				2894722828ADDD1E0018571C /* ProfileCell.swift in Sources */,
 				2894722128AD93A30018571C /* UserViewModel.swift in Sources */,
-				28C8B92228AAE82400DEEBEE /* CadastroViewController.swift in Sources */,
+				28C8B92228AAE82400DEEBEE /* RegistrationViewController.swift in Sources */,
 				2894721628AD7CDD0018571C /* ModelUser.swift in Sources */,
 				28C8B91E28AAE82400DEEBEE /* AppDelegate.swift in Sources */,
 				2894721928AD87620018571C /* UsernameViewController.swift in Sources */,
 				28C8B92028AAE82400DEEBEE /* SceneDelegate.swift in Sources */,
-				2894721E28AD8E8F0018571C /* PerfilViewController.swift in Sources */,
+				2894721E28AD8E8F0018571C /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

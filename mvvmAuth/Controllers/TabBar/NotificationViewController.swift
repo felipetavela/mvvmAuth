@@ -1,26 +1,25 @@
 import Foundation
 import UIKit
 
-class SearchViewController: UIViewController {
+class NotificationViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var searchTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.searchTableView.dataSource = self
-        self.searchTableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
-extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
+extension NotificationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell")
         
         return cell!
     }
+
 }
