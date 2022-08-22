@@ -12,9 +12,12 @@ class UsernameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usernameTextField.autocapitalizationType = UITextAutocapitalizationType.none
         usernameView.layer.cornerRadius = 10
         enterButton.layer.cornerRadius = 15
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        
+        
     }
     
     func alert (title: String, message: String) {
@@ -45,4 +48,11 @@ class UsernameViewController: UIViewController {
 
     }
 }
+}
+
+extension UsernameViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.text = ""
+    }
 }

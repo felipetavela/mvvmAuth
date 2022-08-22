@@ -26,7 +26,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zdT-1V-t8X">
                                                 <rect key="frame" x="10" y="5" width="330" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
@@ -55,7 +55,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mCF-db-Ou6">
                                                 <rect key="frame" x="10" y="5" width="330" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES"/>
@@ -627,7 +627,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-9L-Vsn">
-                                <rect key="frame" x="17" y="402.5" width="380" height="170.5"/>
+                                <rect key="frame" x="17" y="427.5" width="380" height="155.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrw-gD-axF">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="42.5"/>
@@ -647,12 +647,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-tY-4ZC">
-                                        <rect key="frame" x="0.0" y="90.5" width="380" height="80"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="380" height="65"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-qC-SZo">
-                                                <rect key="frame" x="10" y="5" width="360" height="70"/>
+                                                <rect key="frame" x="10" y="5" width="360" height="55"/>
                                                 <color key="backgroundColor" red="0.82745099070000006" green="0.92941176889999999" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.82745099070000006" green="0.92941176889999999" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                             </textField>
@@ -664,16 +665,16 @@
                                             <constraint firstItem="Cxn-qC-SZo" firstAttribute="leading" secondItem="Ae0-tY-4ZC" secondAttribute="leading" constant="10" id="lZm-M9-qwf"/>
                                             <constraint firstAttribute="trailing" secondItem="Cxn-qC-SZo" secondAttribute="trailing" constant="10" id="v7b-1T-HyV"/>
                                             <constraint firstAttribute="bottom" secondItem="Cxn-qC-SZo" secondAttribute="bottom" constant="5" id="vwn-GE-999"/>
-                                            <constraint firstAttribute="height" constant="80" id="wOO-LM-BuA"/>
+                                            <constraint firstAttribute="height" constant="65" id="wOO-LM-BuA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-71-RpE">
-                                <rect key="frame" x="47" y="598" width="320" height="70"/>
+                                <rect key="frame" x="47" y="603" width="320" height="60"/>
                                 <color key="backgroundColor" red="0.38823530080000002" green="0.84313726430000002" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Qc6-Q7-N8O"/>
+                                    <constraint firstAttribute="height" constant="60" id="Qc6-Q7-N8O"/>
                                     <constraint firstAttribute="width" constant="320" id="aPL-jA-Ks3"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -687,7 +688,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogs" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-ve-4p6">
-                                <rect key="frame" x="32.5" y="133" width="349" height="259"/>
+                                <rect key="frame" x="32.5" y="203" width="349" height="259"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="349" id="SGn-N7-U4q"/>
                                     <constraint firstAttribute="height" constant="259" id="lK7-qm-PSN"/>
@@ -698,9 +699,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cMD-9L-Vsn" firstAttribute="centerX" secondItem="6wD-GX-0JV" secondAttribute="centerX" id="7Gb-Ve-XR7"/>
-                            <constraint firstItem="OP2-71-RpE" firstAttribute="top" secondItem="cMD-9L-Vsn" secondAttribute="bottom" constant="25" id="Bph-W4-GDi"/>
+                            <constraint firstItem="OP2-71-RpE" firstAttribute="top" secondItem="cMD-9L-Vsn" secondAttribute="bottom" constant="20" id="Bph-W4-GDi"/>
                             <constraint firstItem="OP2-71-RpE" firstAttribute="centerX" secondItem="6wD-GX-0JV" secondAttribute="centerX" id="fl5-ih-iKb"/>
-                            <constraint firstItem="5k8-ve-4p6" firstAttribute="top" secondItem="FTc-oG-FOu" secondAttribute="top" constant="45" id="gLR-gE-UTu"/>
+                            <constraint firstItem="5k8-ve-4p6" firstAttribute="top" secondItem="FTc-oG-FOu" secondAttribute="top" constant="115" id="gLR-gE-UTu"/>
                             <constraint firstItem="5k8-ve-4p6" firstAttribute="centerX" secondItem="6wD-GX-0JV" secondAttribute="centerX" id="uik-6f-XEe"/>
                             <constraint firstItem="OP2-71-RpE" firstAttribute="centerY" secondItem="6wD-GX-0JV" secondAttribute="centerY" constant="185" id="vFl-ZW-fdj"/>
                         </constraints>
